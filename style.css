@@ -4,16 +4,31 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+button {
+    font-size: 25px;
+    padding: 20px  30px;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: 240px;
+    width: 650px;
+    height: 650px; 
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 100px;
 }
 
 .square{
-    width: 15px;
-    height: 15px;
-    border: 2px solid rgb(253, 6, 6);
-    
+    display: flex;
+    flex : 0 0 calc(100% / 16);
+    border: solid rgb(208, 203, 203);    
 }
