@@ -31,4 +31,5 @@ button {
     display: flex;
     flex : 0 0 calc(100% / 16);
     border: solid rgb(208, 203, 203);    
+    opacity : 1;
 }
