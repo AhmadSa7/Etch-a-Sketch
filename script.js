@@ -26,7 +26,9 @@ function drawGrid(container, gridNumber) {
             square.style.backgroundColor = RandomRGB;
 
             let newOpacity = Number(square.style.opacity);
-            newOpacity = newOpacity + 0.1;            
+            if (newOpacity < 1) {
+                newOpacity = newOpacity + 0.1;            
+            }
 
             square.style.opacity = newOpacity.toString();
         });
@@ -55,7 +57,9 @@ btn.addEventListener("click", () => {
                 square.style.backgroundColor = randomRGB();
 
                 let newOpacity = Number(square.style.opacity);
-                newOpacity = newOpacity + 0.1;            
+                if (newOpacity < 1) {
+                    newOpacity = newOpacity + 0.1;            
+                }           
 
                 square.style.opacity = newOpacity.toString();
             });
